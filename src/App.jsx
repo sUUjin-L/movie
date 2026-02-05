@@ -1030,9 +1030,9 @@ const DramaTravelGuide = () => {
 
        <section className="relative mb-12">
          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-           {/* Sidebar Scene Selection */}
-           <div className="lg:col-span-3 space-y-6 lg:sticky lg:top-24 h-fit">
-             <h3 className="text-lg font-bold flex items-center gap-2 text-white text-left">
+           {/* Sidebar Scene Selection - 스크롤 시 상단에 고정되어 따라감 */}
+           <div className="lg:col-span-3 space-y-6 lg:sticky lg:top-24 self-start max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:overflow-x-hidden lg:pr-1">
+             <h3 className="text-lg font-bold flex items-center gap-2 text-white text-left shrink-0">
                <span className="w-1 h-5 bg-red-600 inline-block"></span>
                에피소드 및 장면
              </h3>
