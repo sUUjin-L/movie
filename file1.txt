@@ -28,7 +28,7 @@ const DramaTravelGuide = () => {
     { 
       id: 'goblin', 
       title: "도깨비", 
-      image: "https://mblogthumb-phinf.pstatic.net/MjAyMTAzMDZfMTM0/MDAxNjE1MDA4ODY3NzY0.8kNnKk4v3jT0pblt4ykZx1YrT3rLp7booyGsBtE39vgg.Q369LsIDofXrhe9QcyMlop0ouoSE7NGL0XwbHZaHPXYg.JPEG.kgwst0320/1_%EF%BC%881%EF%BC%89.jpg?type=w800", 
+      image: "https://web2-cf-image.cjenm.com/resize/1344x756/public/share/metamng/programs/guardian-drama-ko-002-01.jpg?v=1739891184", 
       type: "tvN 드라마", 
       functional: true,
       cast: "공유, 김고은, 이동욱",
