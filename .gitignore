@@ -32,3 +32,6 @@ pnpm-debug.log*
 
 # Vercel
 .vercel
+
+# 중첩 저장소 제외 (embedded git repo 방지)
+/New/

@@ -72,9 +72,16 @@ const DramaTravelGuide = () => {
  const getThumbnail = (videoId, quality = 'maxresdefault') => `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
  const getGoogleMapEmbedUrl = (query) => `https://maps.google.com/maps?q=${encodeURIComponent(query)}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
 
+ /** 코드에 첨부한 이미지 링크를 변경·재할당하지 못하도록 읽기 전용으로 고정 */
+ const deepFreeze = (obj) => {
+   if (obj === null || typeof obj !== 'object') return obj;
+   Object.freeze(obj);
+   Object.keys(obj).forEach((k) => { if (typeof obj[k] === 'object' && obj[k] !== null) deepFreeze(obj[k]); });
+   return obj;
+ };
 
- // 드라마별 포스터 및 메타 정보
- const mediaList = [
+ // 드라마별 포스터 및 메타 정보 (이미지 URL 변경 금지)
+ const mediaList = deepFreeze([
    {
      id: 'Tangerines',
      title: "폭싹 속았수다",
@@ -125,11 +132,11 @@ const DramaTravelGuide = () => {
      genre: "판타지, 액션, 아이돌",
      tone: "화려한, 긴박한"
    }
- ];
+ ]);
 
 
- // 드라마별 장면 데이터
- const scenesData = {
+ // 드라마별 장면 데이터 (이미지 URL 변경 금지)
+ const scenesData = deepFreeze({
    'Tangerines': [
      {
        title: "유채꽃밭 속의 찬란한 약속",
@@ -780,7 +787,7 @@ const DramaTravelGuide = () => {
        ]
      }
    ]
- };
+ });
 
 
  const getSearchResults = (q) => {

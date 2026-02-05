@@ -48,7 +48,7 @@ const DramaTravelGuide = () => {
     { 
       id: 'single-inferno', 
       title: "솔로지옥 5", 
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80", 
+      image: "https://cdn.k-trendynews.com/news/photo/202502/179360_294668_2128.jpg", 
       type: "Netflix 예능", 
       functional: true,
       cast: "홍진경, 이다희, 규현, 한해, 덱스",
@@ -196,8 +196,27 @@ const DramaTravelGuide = () => {
             image: "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNjAxMjNfMjU1%2FMDAxNzY5MTA4ODMwMTIy.hkwNLT_DZc6DQYDgPxeTjlxdlMID4PyYmoInfUxT3u4g.vhyEjjoOZORZ8nT-PAzjmcdfVdFEhtObM_7CLQUtRhQg.JPEG%2F1000058359.jpg.jpg%3Ftype%3Dw1500_60_sharpen"
           }
         ],
-        attractions: []
-      }
+        attractions: [
+          {
+           name: "연세대학교 캠퍼스",
+           desc: "담쟁이덩굴로 뒤덮인 고풍스러운 건물들이 아름다워 산책과 사진 촬영에 최적입니다.",
+           url: getSearchUrl("연세대학교 캠퍼스"),
+           image: "https://www.yonsei.ac.kr/sites/sc/images/sub/img-cam-guide1.jpg"
+         },
+         {
+           name: "경의선 책거리",
+           desc: "폐철길을 따라 조성된 문화 산책로로, 다양한 책방과 예술 작품을 만날 수 있습니다.",
+           url: getSearchUrl("경의선 책거리"),
+           image: "https://img.hankyung.com/photo/201610/AB.12749450.1.jpg"
+         },
+         {
+           name: "신촌 유플렉스 & 명물거리",
+           desc: "젊음의 활기가 넘치는 거리로, 버스킹 공연과 다양한 쇼핑을 즐길 수 있는 핫플레이스입니다.",
+           url: getSearchUrl("신촌 명물거리"),
+           image: "https://t1.daumcdn.net/cfile/tistory/230DEA41547B016D06"
+         }
+       ]
+     }
     ],
     'if-we': [
       {
@@ -366,7 +385,7 @@ const DramaTravelGuide = () => {
         ]
       }
     ],
-    'single-inferno': [
+        'single-inferno': [
       {
         title: "거친 매력의 시작, 지옥도 해변",
         videoId: "6bXoiLguSXc",
@@ -376,7 +395,7 @@ const DramaTravelGuide = () => {
           address: "인천광역시 옹진군 자월면 승봉리",
           desc: "솔로지옥 시리즈의 상징인 무인도입니다. 시즌 5에서는 더욱 광활해진 해변과 강화된 서바이벌 규칙으로 출연자들의 본능적인 로맨스를 자극하는 장소입니다.",
           url: getSearchUrl("사승봉도 솔로지옥"),
-          image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+          image: "https://cdn.hapt.co.kr/news/photo/201507/31813_687_10.JPG"
         },
         restaurants: [
           {
@@ -384,21 +403,21 @@ const DramaTravelGuide = () => {
             menu: "자연산 회 & 매운탕",
             desc: "지옥도 입구인 승봉도에서 맛볼 수 있는 신선한 해산물 요리입니다.",
             url: getSearchUrl("승봉도 맛집"),
-            image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"
+            image: "https://d12zq4w4guyljn.cloudfront.net/750_750_20260110075718_photo1_719f75d5d6ae.webp"
           },
           {
             name: "무인도 캠핑 푸드",
             menu: "해산물 직화 라면",
             desc: "지옥도 감성을 그대로 느낄 수 있는 야외 직화 요리 스타일입니다.",
             url: getSearchUrl("사승봉도 캠핑"),
-            image: "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=600&q=80"
+            image: "https://recipe1.ezmember.co.kr/cache/recipe/2025/04/24/11acd01ac6711fea5a9ec3fd57777a371.jpg"
           },
           {
             name: "인천항 연안부두",
             menu: "밴댕이 회무침",
             desc: "섬으로 떠나기 전 인천에서 즐길 수 있는 별미 중 하나입니다.",
             url: getSearchUrl("인천 연안부두 맛집"),
-            image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+            image: "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5SXp/image/CMyMFkxKAR_DJ87GG4TKA5drUAw.jpg"
           }
         ],
         attractions: [
@@ -431,7 +450,7 @@ const DramaTravelGuide = () => {
           address: "인천광역시 중구 공항문화로 127",
           desc: "시즌 5의 새로운 천국도 랜드마크입니다. 150m 길이의 LED 천장에서 펼쳐지는 환상적인 디지털 아트 쇼가 커플들의 로맨틱한 분위기를 극대화합니다.",
           url: getSearchUrl("인스파이어 리조트 오로라"),
-          image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+          image: "https://admin.inspireresorts.com/sites/default/files/2024-02/0104%20Aurora%20(6)_0.jpg"
         },
         restaurants: [
           {
@@ -439,7 +458,7 @@ const DramaTravelGuide = () => {
             menu: "드라이 에이징 스테이크",
             desc: "리조트 내 위치한 최고급 다이닝으로, 완벽한 천국도 데이트를 완성합니다.",
             url: getSearchUrl("인스파이어 마이클 조던 스테이크"),
-            image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80"
+            image: "https://admin.inspireresorts.com/sites/default/files/2024-03/04-header_2.jpg"
           },
           {
             name: "가든 팜 카페",
@@ -453,7 +472,7 @@ const DramaTravelGuide = () => {
             menu: "프렌치 스타일 다이닝",
             desc: "화려한 열기구 컨셉의 바에서 즐기는 로맨틱한 밤의 다이닝입니다.",
             url: getSearchUrl("인스파이어 브라세리 1783"),
-            image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80"
+            image: "https://ugc-images.catchtable.co.kr/catchtable/shopinfo/sStse7IX3A7ihdVk--tJZLg/6400049b840a4d878a98e88f2ab6a036"
           }
         ],
         attractions: [
@@ -461,7 +480,7 @@ const DramaTravelGuide = () => {
             name: "로툰다 (Rotunda)",
             desc: "움직이는 대형 키네틱 샹들리에가 연출하는 압도적인 예술적 공간입니다.",
             url: getSearchUrl("인스파이어 로툰다"),
-            image: "https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&w=600&q=80"
+            image: "https://admin.inspireresorts.com/sites/default/files/2024-03/L3730128.JPG"
           },
           {
             name: "을왕리 해변",
@@ -473,7 +492,7 @@ const DramaTravelGuide = () => {
             name: "영종도 마시안 해변",
             desc: "갯벌 체험과 베이커리 카페로 유명한 데이트 명소입니다.",
             url: getSearchUrl("마시안 해변"),
-            image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUf5GlG9gLANlJKHgfen1t_vchiiZHAWtr-g&s"
           }
         ]
       },
@@ -486,7 +505,7 @@ const DramaTravelGuide = () => {
           address: "인천광역시 중구 공항문화로 127 리조트 내",
           desc: "사계절 내내 즐길 수 있는 실내 워터파크입니다. 투명한 유리 돔 아래에서 펼쳐지는 커플들의 과감하고 시원한 데이트 장소입니다.",
           url: getSearchUrl("인스파이어 스플래시 베이"),
-          image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+          image: "https://admin.inspireresorts.com/sites/default/files/2025-11/Splash%20Bay%20-%20Splash%20Bay%20Pool%20Dome%20img.png"
         },
         restaurants: [
           {
@@ -494,21 +513,21 @@ const DramaTravelGuide = () => {
             menu: "정통 중식 요리",
             desc: "물놀이 후 즐기는 고급스럽고 든든한 중식 다이닝입니다.",
             url: getSearchUrl("인스파이어 홍반"),
-            image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80"
+            image: "https://admin.inspireresorts.com/sites/default/files/2024-03/05_3.jpg"
           },
           {
             name: "히로키",
             menu: "컨템포러리 일식",
             desc: "정갈한 일식 코스로 천국도의 품격을 더해주는 레스토랑입니다.",
             url: getSearchUrl("인스파이어 히로키"),
-            image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"
+            image: "https://d12zq4w4guyljn.cloudfront.net/750_750_20250108100903_photo1_e829952808f4.webp"
           },
           {
             name: "오아시스 고메 빌리지",
             menu: "푸드 코트",
             desc: "리조트 내 다양한 맛집들을 한 번에 만나볼 수 있는 푸드홀입니다.",
             url: getSearchUrl("인스파이어 오아시스 고메 빌리지"),
-            image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+            image: "https://admin.inspireresorts.com/sites/default/files/2024-05/BMK02162-%ED%8E%B8%EC%A7%91_1.jpg"
           }
         ],
         attractions: [
@@ -516,7 +535,7 @@ const DramaTravelGuide = () => {
             name: "파라다이스 시티 씨메르",
             desc: "인근의 또 다른 럭셔리 스파 시설로, 힐링 투어 코스로 제격입니다.",
             url: getSearchUrl("파라다이스 씨메르"),
-            image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+            image: "https://www.p-city.com/upload_file/202507_A/1752041341407.jpg"
           },
           {
             name: "인천공항 전망대",
@@ -528,7 +547,7 @@ const DramaTravelGuide = () => {
             name: "왕산 마리나",
             desc: "요트 체험이 가능한 곳으로 천국도급 럭셔리 여행의 정점을 찍을 수 있습니다.",
             url: getSearchUrl("왕산 마리나 요트"),
-            image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+            image: "https://www.wangsanmarina.co.kr/upload/visualImage/20181107636772079316440577.jpg"
           }
         ]
       }
@@ -929,10 +948,7 @@ const DramaTravelGuide = () => {
                 </div>
 
                 {/* Nearby Attraction Row (3 Items) */}
-                <div>
-                  <h3 className="text-2xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter text-white"><Star size={28} className="text-red-600" /> Nearby Attraction</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 font-bold text-white">
-                    {current.attractions.map((attr, i) => (
+                <div>http://localhost:3000 
                       <a key={i} href={attr.url} target="_blank" rel="noopener noreferrer" className="bg-zinc-900 rounded-xl border border-zinc-800 hover:bg-zinc-800/80 hover:border-red-600/30 transition-all cursor-pointer flex flex-col h-full group block overflow-hidden shadow-lg">
                         <div className="h-40 w-full overflow-hidden text-white"><img src={attr.image} alt={attr.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /></div>
                         <div className="p-6 flex flex-col justify-between flex-grow">
@@ -975,7 +991,8 @@ const DramaTravelGuide = () => {
       <footer className="mt-20 py-24 px-10 border-t border-zinc-900 bg-black text-zinc-500 font-bold text-left">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-16 text-left">
           <div className="space-y-8 max-w-sm text-left uppercase tracking-tighter">
-            <h2 className="text-4xl font-black text-red-600 tracking-tighter">K Drama Hunters</h2>
+            <h2 className="text-4xl font-bl
+ text-red-600 tracking-tighter">K Drama Hunters</h2>
             <p className="text-sm leading-relaxed font-medium">K 드라마 헌터스는 명작 드라마의 발자취를 따라가는 프리미엄 여행 큐레이션 서비스입니다.</p>
           </div>
         </div>
