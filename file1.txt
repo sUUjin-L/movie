@@ -480,7 +480,7 @@ const DramaTravelGuide = () => {
             name: "로툰다 (Rotunda)",
             desc: "움직이는 대형 키네틱 샹들리에가 연출하는 압도적인 예술적 공간입니다.",
             url: getSearchUrl("인스파이어 로툰다"),
-            image: "https://admin.inspireresorts.com/sites/default/files/2024-03/L3730128.JPG"
+            image: "https://i.ytimg.com/vi/cpkNuAuUqdA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDeysyj9CNaM8RfOlP7-pt2d07dyQ"
           },
           {
             name: "을왕리 해변",
