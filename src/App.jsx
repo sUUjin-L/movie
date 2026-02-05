@@ -71,6 +71,19 @@ const DramaTravelGuide = () => {
  const getYoutubeLink = (videoId) => `https://www.youtube.com/watch?v=${videoId}`;
  const getThumbnail = (videoId, quality = 'maxresdefault') => `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
  const getGoogleMapEmbedUrl = (query) => `https://maps.google.com/maps?q=${encodeURIComponent(query)}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
+ const getGoogleMapSearchUrl = (query) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+ const getNaverMapSearchUrl = (query) => `https://map.naver.com/v5/search/${encodeURIComponent(query)}`;
+
+ const GoogleMapIcon = ({ className = "w-5 h-5" }) => (
+   <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+   </svg>
+ );
+ const NaverMapIcon = ({ className = "w-5 h-5" }) => (
+   <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+     <path d="M16.273 12.845L7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z" />
+   </svg>
+ );
 
  /** 코드에 첨부한 이미지 링크를 변경·재할당하지 못하도록 읽기 전용으로 고정 */
  const deepFreeze = (obj) => {
@@ -493,7 +506,7 @@ const DramaTravelGuide = () => {
            name: "사승봉도 낙조 명당",
            desc: "서해안 최고의 일몰을 감상할 수 있는 해변 포인트입니다.",
            url: getSearchUrl("사승봉도 일몰"),
-           image: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA4MTJfMzcg%2FMDAxNjYwMjk1MTA3MTAx.r7rHuJWOi5CG8KvYOfGrZZlUnFzNgIT8lpGYu04Q1Bgg.YwErDA_InYbYzYORObPnxV7q4-gKfZmvse3NpBeHbwQg.JPEG.jjok3204%2FDSC_0686.jpg&type=sc960_832"
+           image: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160601_129%2Fkalgard_1464792982366YEPre_JPEG%2FIMG_7432.jpg&type=sc960_832"
          },
          {
            name: "목섬",
@@ -1129,6 +1142,14 @@ const DramaTravelGuide = () => {
                        ))}
                        <span className="text-[10px] text-zinc-500 self-center ml-1">인스타에서 보기</span>
                      </div>
+                     <div className="flex gap-2 pt-4 border-t border-zinc-800 mt-4">
+                       <a href={getGoogleMapSearchUrl(current.location.name)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 shrink-0 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition" title="구글맵">
+                         <GoogleMapIcon className="w-5 h-5" />
+                       </a>
+                       <a href={getNaverMapSearchUrl(current.location.name)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 shrink-0 rounded-lg bg-[#03C75A] hover:bg-[#02b350] text-white transition" title="네이버지도">
+                         <NaverMapIcon className="w-5 h-5" />
+                       </a>
+                     </div>
                    </div>
                  </div>
                </div>
@@ -1184,10 +1205,20 @@ const DramaTravelGuide = () => {
                  <h3 className="text-2xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter text-white"><Utensils size={28} className="text-red-600" /> Dining Guide</h3>
                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                    {current.restaurants.map((rest, i) => (
-                     <a key={i} href={rest.url} target="_blank" rel="noopener noreferrer" className="bg-zinc-900 group cursor-pointer rounded-xl overflow-hidden border border-zinc-800 hover:border-red-600/50 transition-all block shadow-lg">
-                       <div className="h-40 overflow-hidden relative"><img src={rest.image} alt={rest.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /><div className="absolute top-3 right-3 px-2 py-1 bg-red-600 text-[8px] font-black rounded uppercase shadow-lg z-10 tracking-widest text-white uppercase">Best</div></div>
-                       <div className="p-5"><h4 className="font-black text-sm mb-1 group-hover:text-red-500 transition-colors uppercase tracking-tight text-white">{rest.name}</h4><p className="text-[10px] text-zinc-400 font-black mb-3 border-b border-zinc-800 pb-2 uppercase tracking-tighter">{rest.menu || '대표메뉴'}</p><p className="text-[11px] text-zinc-500 line-clamp-2 leading-relaxed font-medium">{rest.desc}</p></div>
-                     </a>
+                     <div key={i} className="bg-zinc-900 group rounded-xl overflow-hidden border border-zinc-800 hover:border-red-600/50 transition-all shadow-lg flex flex-col">
+                       <a href={rest.url} target="_blank" rel="noopener noreferrer" className="block">
+                         <div className="h-40 overflow-hidden relative"><img src={rest.image} alt={rest.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /><div className="absolute top-3 right-3 px-2 py-1 bg-red-600 text-[8px] font-black rounded uppercase shadow-lg z-10 tracking-widest text-white uppercase">Best</div></div>
+                         <div className="p-5"><h4 className="font-black text-sm mb-1 group-hover:text-red-500 transition-colors uppercase tracking-tight text-white">{rest.name}</h4><p className="text-[10px] text-zinc-400 font-black mb-3 border-b border-zinc-800 pb-2 uppercase tracking-tighter">{rest.menu || '대표메뉴'}</p><p className="text-[11px] text-zinc-500 line-clamp-2 leading-relaxed font-medium">{rest.desc}</p></div>
+                       </a>
+                       <div className="flex gap-2 p-3 mt-auto border-t border-zinc-800">
+                         <a href={getGoogleMapSearchUrl(rest.name)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 shrink-0 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition" title="구글맵">
+                           <GoogleMapIcon className="w-5 h-5" />
+                         </a>
+                         <a href={getNaverMapSearchUrl(rest.name)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 shrink-0 rounded-lg bg-[#03C75A] hover:bg-[#02b350] text-white transition" title="네이버지도">
+                           <NaverMapIcon className="w-5 h-5" />
+                         </a>
+                       </div>
+                     </div>
                    ))}
                  </div>
                </div>
@@ -1198,13 +1229,23 @@ const DramaTravelGuide = () => {
                  <h3 className="text-2xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter text-white"><Star size={28} className="text-red-600" /> Nearby Attraction</h3>
                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 font-bold text-white">
                    {current.attractions.map((attr, i) => (
-                     <a key={i} href={attr.url} target="_blank" rel="noopener noreferrer" className="bg-zinc-900 rounded-xl border border-zinc-800 hover:bg-zinc-800/80 hover:border-red-600/30 transition-all cursor-pointer flex flex-col h-full group block overflow-hidden shadow-lg">
-                       <div className="h-40 w-full overflow-hidden text-white"><img src={attr.image} alt={attr.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /></div>
-                       <div className="p-6 flex flex-col justify-between flex-grow">
-                         <h4 className="font-black text-sm mb-3 flex justify-between items-center group-hover:text-red-500 transition-colors uppercase tracking-tight text-white">{attr.name} <ChevronRight size={16} /></h4>
-                         <p className="text-[11px] text-zinc-500 leading-relaxed font-medium line-clamp-3">{attr.desc}</p>
+                     <div key={i} className="bg-zinc-900 rounded-xl border border-zinc-800 hover:border-red-600/30 transition-all flex flex-col h-full overflow-hidden shadow-lg">
+                       <a href={attr.url} target="_blank" rel="noopener noreferrer" className="block group flex-grow">
+                         <div className="h-40 w-full overflow-hidden text-white"><img src={attr.image} alt={attr.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /></div>
+                         <div className="p-6">
+                           <h4 className="font-black text-sm mb-3 flex justify-between items-center group-hover:text-red-500 transition-colors uppercase tracking-tight text-white">{attr.name} <ChevronRight size={16} /></h4>
+                           <p className="text-[11px] text-zinc-500 leading-relaxed font-medium line-clamp-3">{attr.desc}</p>
+                         </div>
+                       </a>
+                       <div className="flex gap-2 p-3 mt-auto border-t border-zinc-800">
+                         <a href={getGoogleMapSearchUrl(attr.name)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 shrink-0 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition" title="구글맵">
+                           <GoogleMapIcon className="w-5 h-5" />
+                         </a>
+                         <a href={getNaverMapSearchUrl(attr.name)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-10 w-10 shrink-0 rounded-lg bg-[#03C75A] hover:bg-[#02b350] text-white transition" title="네이버지도">
+                           <NaverMapIcon className="w-5 h-5" />
+                         </a>
                        </div>
-                     </a>
+                     </div>
                    ))}
                  </div>
                </div>
