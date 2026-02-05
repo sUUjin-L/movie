@@ -39,7 +39,13 @@ git push -u origin main
    - **Output Directory**: `dist`  
    - **Install Command**: `npm install`
 5. **Deploy**를 클릭하면 빌드 후 배포됩니다.
-6. 이후 저장소에 푸시할 때마다 자동으로 재배포됩니다.
+
+### 푸시 시 자동 배포 (기본 동작)
+
+- Vercel에 GitHub 저장소를 연결해 두면 **`main` 브랜치에 푸시할 때마다 자동으로 재배포**됩니다.
+- 확인 방법: Vercel 대시보드 → 프로젝트 → **Settings** → **Git**  
+  - **Production Branch**: `main` 으로 되어 있으면, `git push origin main` 시마다 프로덕션 배포가 실행됩니다.
+- 커밋 후 푸시만 하면 Vercel이 빌드 후 자동 반영합니다.
 
 ### 수동 배포 (Vercel CLI)
 
