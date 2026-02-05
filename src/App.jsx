@@ -95,7 +95,7 @@ const DramaTravelGuide = () => {
    {
      id: 'goblin',
      title: "도깨비",
-     image: "https://mblogthumb-phinf.pstatic.net/MjAyMTAzMDZfMTM0/MDAxNjE1MDA4ODY3NzY0.8kNnKk4v3jT0pblt4ykZx1YrT3rLp7booyGsBtE39vgg.Q369LsIDofXrhe9QcyMlop0ouoSE7NGL0XwbHZaHPXYg.JPEG.kgwst0320/1_%EF%BC%881%EF%BC%89.jpg?type=w800",
+     image: "https://i.namu.wiki/i/3pIwf61pBklLV5daiqsg2xiAJCoE-YL4DyokkDJgAMW3AHCcNFI2-3fKJXyqUPEBB_sbJpIv0mektKjqGlifyA.webp",
      type: "tvN 드라마",
      functional: true,
      cast: "공유, 김고은, 이동욱",
@@ -463,7 +463,7 @@ const DramaTravelGuide = () => {
          address: "인천광역시 옹진군 자월면 승봉리",
          desc: "솔로지옥 시리즈의 상징인 무인도입니다. 시즌 5에서는 더욱 광활해진 해변과 강화된 서바이벌 규칙으로 출연자들의 본능적인 로맨스를 자극하는 장소입니다.",
          url: getSearchUrl("사승봉도 솔로지옥"),
-         image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+         image: "https://cdn.hapt.co.kr/news/photo/201507/31813_687_10.JPG"
        },
        restaurants: [
          {
@@ -471,21 +471,21 @@ const DramaTravelGuide = () => {
            menu: "자연산 회 & 매운탕",
            desc: "지옥도 입구인 승봉도에서 맛볼 수 있는 신선한 해산물 요리입니다.",
            url: getSearchUrl("승봉도 맛집"),
-           image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"
+           image: "https://d12zq4w4guyljn.cloudfront.net/750_750_20260110075718_photo1_719f75d5d6ae.webp"
          },
          {
            name: "무인도 캠핑 푸드",
            menu: "해산물 직화 라면",
            desc: "지옥도 감성을 그대로 느낄 수 있는 야외 직화 요리 스타일입니다.",
            url: getSearchUrl("사승봉도 캠핑"),
-           image: "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=600&q=80"
+           image: "https://recipe1.ezmember.co.kr/cache/recipe/2025/04/24/11acd01ac6711fea5a9ec3fd57777a371.jpg"
          },
          {
            name: "인천항 연안부두",
            menu: "밴댕이 회무침",
            desc: "섬으로 떠나기 전 인천에서 즐길 수 있는 별미 중 하나입니다.",
            url: getSearchUrl("인천 연안부두 맛집"),
-           image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+           image: "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5SXp/image/CMyMFkxKAR_DJ87GG4TKA5drUAw.jpg"
          }
        ],
        attractions: [
@@ -493,7 +493,7 @@ const DramaTravelGuide = () => {
            name: "사승봉도 낙조 명당",
            desc: "서해안 최고의 일몰을 감상할 수 있는 해변 포인트입니다.",
            url: getSearchUrl("사승봉도 일몰"),
-           image: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160601_129%2Fkalgard_1464792982366YEPre_JPEG%2FIMG_7432.jpg&type=sc960_832"
+           image: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA4MTJfMzcg%2FMDAxNjYwMjk1MTA3MTAx.r7rHuJWOi5CG8KvYOfGrZZlUnFzNgIT8lpGYu04Q1Bgg.YwErDA_InYbYzYORObPnxV7q4-gKfZmvse3NpBeHbwQg.JPEG.jjok3204%2FDSC_0686.jpg&type=sc960_832"
          },
          {
            name: "목섬",
@@ -506,7 +506,6 @@ const DramaTravelGuide = () => {
            desc: "인근 섬 대이작도에서 즐기는 생태 체험 코스입니다.",
            url: getSearchUrl("대이작도 여행"),
            image: "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fitour.incheon.go.kr%2Fcommon%2FviewImg.do%3FimgId%3DDBI22012116261840185&type=sc960_832"
-         }
        ]
      },
      {
@@ -518,7 +517,7 @@ const DramaTravelGuide = () => {
          address: "인천광역시 중구 공항문화로 127",
          desc: "시즌 5의 새로운 천국도 랜드마크입니다. 150m 길이의 LED 천장에서 펼쳐지는 환상적인 디지털 아트 쇼가 커플들의 로맨틱한 분위기를 극대화합니다.",
          url: getSearchUrl("인스파이어 리조트 오로라"),
-         image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+         image: "https://admin.inspireresorts.com/sites/default/files/2024-02/0104%20Aurora%20(6)_0.jpg"
        },
        restaurants: [
          {
@@ -526,7 +525,7 @@ const DramaTravelGuide = () => {
            menu: "드라이 에이징 스테이크",
            desc: "리조트 내 위치한 최고급 다이닝으로, 완벽한 천국도 데이트를 완성합니다.",
            url: getSearchUrl("인스파이어 마이클 조던 스테이크"),
-           image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80"
+           image: "https://admin.inspireresorts.com/sites/default/files/2024-03/04-header_2.jpg"
          },
          {
            name: "가든 팜 카페",
@@ -540,7 +539,7 @@ const DramaTravelGuide = () => {
            menu: "프렌치 스타일 다이닝",
            desc: "화려한 열기구 컨셉의 바에서 즐기는 로맨틱한 밤의 다이닝입니다.",
            url: getSearchUrl("인스파이어 브라세리 1783"),
-           image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80"
+           image: "https://ugc-images.catchtable.co.kr/catchtable/shopinfo/sStse7IX3A7ihdVk--tJZLg/6400049b840a4d878a98e88f2ab6a036"
          }
        ],
        attractions: [
@@ -548,7 +547,7 @@ const DramaTravelGuide = () => {
            name: "로툰다 (Rotunda)",
            desc: "움직이는 대형 키네틱 샹들리에가 연출하는 압도적인 예술적 공간입니다.",
            url: getSearchUrl("인스파이어 로툰다"),
-           image: "https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&w=600&q=80"
+           image: "https://admin.inspireresorts.com/sites/default/files/2024-03/L3730128.JPG"
          },
          {
            name: "을왕리 해변",
@@ -560,7 +559,7 @@ const DramaTravelGuide = () => {
            name: "영종도 마시안 해변",
            desc: "갯벌 체험과 베이커리 카페로 유명한 데이트 명소입니다.",
            url: getSearchUrl("마시안 해변"),
-           image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+           image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUf5GlG9gLANlJKHgfen1t_vchiiZHAWtr-g&s"
          }
        ]
      },
@@ -573,7 +572,7 @@ const DramaTravelGuide = () => {
          address: "인천광역시 중구 공항문화로 127 리조트 내",
          desc: "사계절 내내 즐길 수 있는 실내 워터파크입니다. 투명한 유리 돔 아래에서 펼쳐지는 커플들의 과감하고 시원한 데이트 장소입니다.",
          url: getSearchUrl("인스파이어 스플래시 베이"),
-         image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+         image: "https://admin.inspireresorts.com/sites/default/files/2025-11/Splash%20Bay%20-%20Splash%20Bay%20Pool%20Dome%20img.png"
        },
        restaurants: [
          {
@@ -581,21 +580,21 @@ const DramaTravelGuide = () => {
            menu: "정통 중식 요리",
            desc: "물놀이 후 즐기는 고급스럽고 든든한 중식 다이닝입니다.",
            url: getSearchUrl("인스파이어 홍반"),
-           image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80"
+           image: "https://admin.inspireresorts.com/sites/default/files/2024-03/05_3.jpg"
          },
          {
            name: "히로키",
            menu: "컨템포러리 일식",
            desc: "정갈한 일식 코스로 천국도의 품격을 더해주는 레스토랑입니다.",
            url: getSearchUrl("인스파이어 히로키"),
-           image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"
+           image: "https://d12zq4w4guyljn.cloudfront.net/750_750_20250108100903_photo1_e829952808f4.webp"
          },
          {
            name: "오아시스 고메 빌리지",
            menu: "푸드 코트",
            desc: "리조트 내 다양한 맛집들을 한 번에 만나볼 수 있는 푸드홀입니다.",
            url: getSearchUrl("인스파이어 오아시스 고메 빌리지"),
-           image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+           image: "https://admin.inspireresorts.com/sites/default/files/2024-05/BMK02162-%ED%8E%B8%EC%A7%91_1.jpg"
          }
        ],
        attractions: [
@@ -603,7 +602,7 @@ const DramaTravelGuide = () => {
            name: "파라다이스 시티 씨메르",
            desc: "인근의 또 다른 럭셔리 스파 시설로, 힐링 투어 코스로 제격입니다.",
            url: getSearchUrl("파라다이스 씨메르"),
-           image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+           image: "https://www.p-city.com/upload_file/202507_A/1752041341407.jpg"
          },
          {
            name: "인천공항 전망대",
@@ -615,7 +614,7 @@ const DramaTravelGuide = () => {
            name: "왕산 마리나",
            desc: "요트 체험이 가능한 곳으로 천국도급 럭셔리 여행의 정점을 찍을 수 있습니다.",
            url: getSearchUrl("왕산 마리나 요트"),
-           image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+           image: "https://www.wangsanmarina.co.kr/upload/visualImage/20181107636772079316440577.jpg"
          }
        ]
      }
