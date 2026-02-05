@@ -506,6 +506,7 @@ const DramaTravelGuide = () => {
            desc: "인근 섬 대이작도에서 즐기는 생태 체험 코스입니다.",
            url: getSearchUrl("대이작도 여행"),
            image: "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fitour.incheon.go.kr%2Fcommon%2FviewImg.do%3FimgId%3DDBI22012116261840185&type=sc960_832"
+         }
        ]
      },
      {

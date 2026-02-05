@@ -47,6 +47,21 @@ git push -u origin main
   - **Production Branch**: `main` 으로 되어 있으면, `git push origin main` 시마다 프로덕션 배포가 실행됩니다.
 - 커밋 후 푸시만 하면 Vercel이 빌드 후 자동 반영합니다.
 
+### Vercel에 변경 사항이 안 보일 때
+
+1. **배포 목록 확인**: Vercel 대시보드 → 프로젝트 → **Deployments**  
+   - 최신 푸시 후 새 배포가 생성됐는지, **Status**가 **Ready**인지 확인합니다.  
+   - 실패했다면 해당 배포 클릭 → **Building** 로그에서 에러 확인합니다.
+
+2. **캐시 제거 후 재배포**: **Deployments** → 최신 배포 오른쪽 **⋯** → **Redeploy** → **Redeploy with existing Build Cache** 체크 **해제** 후 실행합니다.
+
+3. **연결 저장소 확인**: **Settings** → **Git**  
+   - **Connected Git Repository**가 `sUUjin-L/movie`인지, **Production Branch**가 `main`인지 확인합니다.
+
+4. **브라우저 캐시**: 시크릿 창으로 열거나 **Ctrl+Shift+R**(강력 새로고침)으로 확인합니다.
+
+5. **`vercel.json`**: 루트의 `vercel.json`에 HTML/JS 캐시 완화 헤더가 있으면, 배포 후에도 최신이 더 잘 보입니다.
+
 ### 수동 배포 (Vercel CLI)
 
 ```bash
